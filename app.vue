@@ -1,9 +1,20 @@
 <template>
-  <div>
   <div class="container">
     <h1>Resep Makanan</h1>
     <nav>
       <nuxt-link to="/">Home</nuxt-link>
+      <nuxt-link to="/search">Pencarian</nuxt-link>
+      <nuxt-link to="/categories">Kategori</nuxt-link>
+      <nuxt-link to="/profile">Profil</nuxt-link>
+      <nuxt-link to="/upload">Unggah Resep</nuxt-link>
+    </nav>
+
+    <section>
+      <h2>Resep Terbaru</h2>
+      <!-- Daftar resep terbaru -->
+
+      <h2>Resep Populer</h2>
+      <!-- Daftar resep populer -->
     </section>
   </div>
 </template>
@@ -14,17 +25,20 @@
   padding: 20px;
   background-color: #fffaf0;
 }
+
 h1 {
   color: #ff6600;
   text-align: center;
   margin-bottom: 20px;
 }
+
 nav {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-bottom: 30px;
 }
+
 nav a {
   color: #ffffff;
   background-color: #ff6600;
@@ -33,9 +47,11 @@ nav a {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
+
 nav a:hover {
   background-color: #cc5200;
 }
+
 section h2 {
   color: #ff6600;
   margin-top: 20px;
