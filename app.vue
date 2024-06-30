@@ -4,7 +4,6 @@
     <h1>Resep Makanan</h1>
     <nav>
       <nuxt-link to="/">Home</nuxt-link>
-@@ -18,3 +18,44 @@
     </section>
   </div>
 </template>
