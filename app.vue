@@ -1,13 +1,20 @@
 <template>
-  <UContainer>
-    <UCard class="mt-10">
-      <template #header>
-        <div class="flex justify-between">
-          <h1>Welcome to Nuxt UI Starter</h1>
-          <ColorScheme><USelect v-model="$colorMode.preference" :options="['system', 'light', 'dark']" /></ColorScheme>
-        </div>
-      </template>
-      <UButton icon="i-heroicons-book-open" to="https://ui.nuxt.com" target="_blank">Open Nuxt UI Documentation</UButton>
-    </UCard>
-  </UContainer>
+  <div>
+    <h1>Resep Makanan</h1>
+    <nav>
+      <nuxt-link to="/">Home</nuxt-link>
+      <nuxt-link to="/search">Pencarian</nuxt-link>
+      <nuxt-link to="/categories">Kategori</nuxt-link>
+      <nuxt-link to="/profile">Profil</nuxt-link>
+      <nuxt-link to="/upload">Unggah Resep</nuxt-link>
+    </nav>
+
+    <section>
+      <h2>Resep Terbaru</h2>
+      <!-- Daftar resep terbaru -->
+
+      <h2>Resep Populer</h2>
+      <!-- Daftar resep populer -->
+    </section>
+  </div>
 </template>
