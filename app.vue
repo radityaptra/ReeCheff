@@ -1,21 +1,42 @@
 <template>
   <div class="container">
-    <h1>Resep Makanan</h1>
+    <h1>REECHEFF</h1>
     <nav>
-      <nuxt-link to="/">Home</nuxt-link>
+      <nuxt-link to="/">Beranda</nuxt-link>
+      <nuxt-link to="/search">Pencarian</nuxt-link>
+      <nuxt-link to="/categories">Kategori</nuxt-link>
       <nuxt-link to="/profile">Profil</nuxt-link>
       <nuxt-link to="/upload">Unggah Resep</nuxt-link>
     </nav>
 
     <section>
       <h2>Resep Terbaru</h2>
-      <!-- Daftar resep terbaru -->
+      <div class="section-content">
+        <div class="recipe-card">
+          <img src="./assets/mie aceh.jpg" alt="mie aceh">
+          <h3>mie aceh</h3>
+          <p>mie aceh adalah makanan yang berasal dari aceh.</p>
+        </div>
+        <!-- Tambahkan lebih banyak resep terbaru di sini jika diperlukan -->
+      </div>
 
       <h2>Resep Populer</h2>
-      <!-- Daftar resep populer -->
+      <div class="section-content">
+        <!-- Tambahkan resep populer di sini -->
+      </div>
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      // Data lainnya jika diperlukan
+    }
+  }
+}
+</script>
 
 <style scoped>
 body {
