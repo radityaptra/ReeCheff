@@ -3,8 +3,6 @@
     <h1>REECHEFF</h1>
     <nav>
       <nuxt-link to="/">Beranda</nuxt-link>
-      <nuxt-link to="/search">Pencarian</nuxt-link>
-      <nuxt-link to="/categories">Kategori</nuxt-link>
       <nuxt-link to="/profile">Profil</nuxt-link>
       <nuxt-link to="/upload">Unggah Resep</nuxt-link>
     </nav>
