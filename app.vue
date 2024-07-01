@@ -3,8 +3,6 @@
     <h1>Resep Makanan</h1>
     <nav>
       <nuxt-link to="/">Home</nuxt-link>
-      <nuxt-link to="/search">Pencarian</nuxt-link>
-      <nuxt-link to="/categories">Kategori</nuxt-link>
       <nuxt-link to="/profile">Profil</nuxt-link>
       <nuxt-link to="/upload">Unggah Resep</nuxt-link>
     </nav>
