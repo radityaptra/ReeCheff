@@ -3,6 +3,8 @@
     <h1>REECHEFF</h1>
     <nav>
       <nuxt-link to="/">Beranda</nuxt-link>
+      <nuxt-link to="/search">Pencarian</nuxt-link>
+      <nuxt-link to="/categories">Kategori</nuxt-link>
       <nuxt-link to="/profile">Profil</nuxt-link>
       <nuxt-link to="/upload">Unggah Resep</nuxt-link>
     </nav>
@@ -15,9 +17,17 @@
           <h3>mie aceh</h3>
           <p>mie aceh adalah makanan yang berasal dari aceh.</p>
         </div>
-        <!-- Tambahkan lebih banyak resep terbaru di sini jika diperlukan -->
+        <div class="recipe-card">
+          <img src="./assets/ketoprak.jpg" alt="ketoprak">
+          <h3>ketoprak</h3>
+          <p>ketoprak makanan dari jawa barat.</p>
+        </div>
+        <div class="recipe-card">
+          <img src="./assets/sup ayam.jpg" alt="sup ayam">
+          <h3>sup ayam</h3>
+          <p>sup ayam makanan berasal dari bali.</p>
+        </div>
       </div>
-
       <h2>Resep Populer</h2>
       <div class="section-content">
         <!-- Tambahkan resep populer di sini -->
@@ -71,7 +81,7 @@ nav a {
   background-color: #ff6600;
   padding: 10px 20px;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 20px;
   transition: background-color 0.3s, transform 0.3s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -97,10 +107,11 @@ section h2 {
 
 .recipe-card {
   background-color: #ffffff;
-  border-radius: 10px;
-  padding: 15px;
+  border-radius: 5px;
+  padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1 1 30%;
 }
 
 .recipe-card:hover {
@@ -110,7 +121,9 @@ section h2 {
 
 .recipe-card img {
   width: 100%;
-  border-radius: 10px;
+  height: 200px; /* Tambahkan tinggi tetap untuk gambar */
+  object-fit: cover; /* Gunakan object-fit untuk memastikan gambar tetap proporsional */
+  border-radius: 5px;
 }
 
 .recipe-card h3 {
